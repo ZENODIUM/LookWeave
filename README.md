@@ -14,6 +14,8 @@
 
 > A public 1–3 minute demo video and hackathon submission URL are not yet recorded in this repository. Add verified links before submission. The [screenshots](#screenshots-and-demo) below are captures from the running Android app.
 
+**Try the Android demo:** [Download the judge APK](https://github.com/ZENODIUM/LookWeave/releases/download/v1.0-demo/app-debug.apk) · [Release notes](https://github.com/ZENODIUM/LookWeave/releases/tag/v1.0-demo). This arm64-v8a, debug-signed build uses the hosted HTTPS gateway; live features require internet and provider quota.
+
 ## At a glance
 
 | Question | LookWeave's answer |
@@ -340,6 +342,8 @@ adb install -r app\build\outputs\apk\debug\app-debug.apk
 Local navigation, seeded wardrobe/profile data, much of the solver, and bundled previews can work without paid-provider access. Fresh chat, voice, YouCam tasks, product research, day context, and map tiles require the gateway and/or internet. Provider-free use is not feature-complete.
 
 Before sharing an APK, rebuild with the production URL, install it on a second Android phone **without ADB reverse**, check gateway `/health`, open Plan → Weave → a bundled Try-on, and run one live text-agent request. Verify quota before recording voice or paid previews. Production release signing and distribution are still needed beyond the debug APK.
+
+The downloadable judge APK has SHA-256 `74816F8BC25308076DD931FBC6E9F18437DD201360E67F117634592BF179E94B`.
 
 ## Roadmap and business
 

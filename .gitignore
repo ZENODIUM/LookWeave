@@ -5,6 +5,7 @@
 /.idea/libraries
 /.idea/modules.xml
 /.idea/workspace.xml
+/.idea/
 /.idea/navEditor.xml
 /.idea/assetWizardSettings.xml
 .DS_Store
@@ -40,7 +41,9 @@ backend/*.log
 /tools/*.jpg
 /tools/*.json
 /desktop/dist/
+/desktop/
 /docs/screenshots/
+/docs/SCREENSHOTS.md
 /app/src/main/assets/youcam-cache/manifest.json
 /app/src/androidTest/assets/mannequin/
 /app/src/androidTest/java/com/vizeno/loomie/MannequinLocalTest.kt
@@ -49,3 +52,7 @@ backend/*.log
 /*.png
 /*.jpg
 /*.apk
+/hackathon_projects_summary.md
+/plan.md
+/scripts/live-style-check.mjs
+/scripts/test-style-desktop.mjs
