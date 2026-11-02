@@ -4,7 +4,7 @@
 
 **LookWeave** is an Android-first personal fashion assistant created for the **2026 YouCam API Skin AI & eCommerce VTO Hackathon**. It helps someone choose a look from their wardrobe, checks whether the whole outfit respects their stated comfort and access needs, explains each change, and offers a YouCam visual preview. Its central idea is **Adaptive Wearability Intelligence**: style, function, context, and personal evidence belong in the same decision.
 
-![LookWeave's explained outfit result on an Android phone](artifacts/screenshots/selected/05-weave-result.png)
+<img src="artifacts/screenshots/selected/05-weave-result.png" alt="LookWeave's explained outfit result on an Android phone" width="480">
 
 ![Android](https://img.shields.io/badge/Android-native-3E5B52?logo=android&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-Jetpack%20Compose-785D83?logo=kotlin&logoColor=white) ![Node.js](https://img.shields.io/badge/Gateway-Node.js-4D6954?logo=nodedotjs&logoColor=white) ![YouCam API](https://img.shields.io/badge/YouCam-API-BB8069) ![Status](https://img.shields.io/badge/status-hackathon%20prototype-A47B48)
 
@@ -15,6 +15,8 @@
 > A public 1–3 minute demo video and hackathon submission URL are not yet recorded in this repository. Add verified links before submission. The [screenshots](#screenshots-and-demo) below are captures from the running Android app.
 
 **Try the Android demo:** [Download the judge APK](https://github.com/ZENODIUM/LookWeave/releases/download/v1.0-demo/app-debug.apk) · [Release notes](https://github.com/ZENODIUM/LookWeave/releases/tag/v1.0-demo). This arm64-v8a, debug-signed build uses the hosted HTTPS gateway; live features require internet and provider quota.
+
+The APK was built from this repository with Gradle using the Android Studio JDK, Android SDK 37, and an arm64-only ABI. For the judge build, `LOOKWEAVE_BACKEND_URL` was set to `https://lookweave-api.vercel.app` before running `assembleDebug`, so the installed app talks to the hosted gateway without ADB reverse or a local Node server. Provider keys stay in the gateway environment and are not compiled into the APK.
 
 ## At a glance
 
