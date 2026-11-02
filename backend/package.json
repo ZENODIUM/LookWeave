@@ -1,0 +1,13 @@
+{
+  "name": "lookweave-api-gateway",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check server.mjs",
+    "test": "node contract-test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

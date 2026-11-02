@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+html,body{margin:0;background:transparent;overflow:hidden}
+#wave{height:160px;width:100vw}
+</style>
+</head>
+<body>
+<div id="wave"></div>
+<script src="siriwave.umd.min.js"></script>
+<script>
+const wave = new SiriWave({
+  container: document.getElementById('wave'),
+  style: 'ios9',
+  width: innerWidth,
+  height: 160,
+  amplitude: .42,
+  speed: .055,
+  autostart: false,
+  globalCompositeOperation: 'source-over',
+  curveDefinition: [
+    { color: '143, 169, 148', supportLine: true },
+    { color: '143, 169, 148' },
+    { color: '143, 169, 148' },
+    { color: '143, 169, 148' }
+  ]
+});
+let settle;
+window.updateVoice = (active, level) => {
+  clearTimeout(settle);
+  wave.setAmplitude(active ? Math.max(.18, Math.min(1, level) * 1.65) : .38);
+  wave.start();
+  if (!active) settle = setTimeout(() => wave.stop(), 700);
+};
+window.updateVoice(false, 0);
+document.addEventListener('visibilitychange', () => { if (document.hidden) wave.stop(); });
+</script>
+</body>
+</html>

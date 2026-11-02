@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Soft wool silhouette for themed icons -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M54,28c14,0 26,11 26,26 0,14 -11,26 -26,26s-26,-12 -26,-26c0,-15 12,-26 26,-26z" />
+    <path
+        android:fillColor="#000000"
+        android:fillAlpha="0.35"
+        android:pathData="M54,34c11,0 20,8 20,20 0,11 -9,20 -20,20s-20,-9 -20,-20c0,-12 9,-20 20,-20z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,48c1.8,0 3.2,1.8 3.2,4s-1.4,4 -3.2,4 -3.2,-1.8 -3.2,-4 1.4,-4 3.2,-4zM62,48c1.8,0 3.2,1.8 3.2,4s-1.4,4 -3.2,4 -3.2,-1.8 -3.2,-4 1.4,-4 3.2,-4z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,62c2.4,3.2 9.6,3.2 12,0"
+        android:strokeWidth="2.4"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"
+        android:fillType="nonZero" />
+    <path
+        android:fillColor="#000000"
+        android:pathData="M72,74c6,4 12,10 14,16 1,2 -1,3 -3,2 -4,-3 -9,-7 -14,-10 -2,-1 -1,-5 3,-8z" />
+</vector>
